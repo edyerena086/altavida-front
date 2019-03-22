@@ -1,0 +1,14 @@
+.login-card {
+    width: 30%;
+    margin-left: 35%;
+    margin-top: 2rem;
+}
+.btn-password-forgot {
+    font-size: .9rem;
+    color: #405f71;
+    text-decoration: none;
+}
+.btn-password-forgot:hover {
+    text-decoration: underline;
+    color: #a5884e;
+}
