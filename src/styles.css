@@ -5,6 +5,9 @@ body, html {
     padding: 0;
     margin: 0;
 }
+.text-center {
+    text-align: center;
+}
 .text-right {
     text-align: right;
 }
@@ -32,4 +35,69 @@ form {
 }
 .logo {
     max-width: 100%;
+}
+
+.container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.row {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    clear: both;
+}
+.col-full {
+    width: 100%;
+}
+.col-half {
+    width: 48%;
+    padding-right: 2%;
+    float: left;
+}
+.col-third {
+    width: 31.333333%;
+    padding-right: 2%;
+    float: left;
+}
+.col-quarter {
+    width: 23%;
+    padding-right: 2%;
+    float: left;
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+@media (min-width: 481px) and (max-width: 767px) {
+    .col-half {
+        width: 100%;
+        padding-right: 0;
+        float: left;
+    }
+    .col-quarter {
+        width: 100%;
+        padding-right: 0;
+        float: left;
+    }
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .col-half {
+        width: 100%;
+        padding-right: 0;
+        float: left;
+    }
+    .col-quarter {
+        width: 100%;
+        padding-right: 0;
+        float: left;
+    }
 }

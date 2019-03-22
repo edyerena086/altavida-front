@@ -1,0 +1,126 @@
+<h3 class="text-center">
+  Información Personal
+</h3>
+
+<div class="container">
+  <div class="row">
+    <div class="col-half">
+        <div class="form-group">
+          <mat-form-field>
+              <input type="text" matInput placeholder="Nombre completo" required>
+          </mat-form-field>
+        </div>
+    </div>
+
+    <div class="col-quarter">
+      <div class="form-group">
+        <mat-form-field>
+          <input matInput [matDatepicker]="picker" placeholder="Fecha de nacimiento" required>
+          <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+      </div>
+    </div>
+
+    <div class="col-quarter">
+      <div class="form-group">
+        <mat-form-field>
+          <mat-label>Genero</mat-label>
+          <mat-select>
+            <mat-option [value]="1">
+              Mujer
+            </mat-option>
+            <mat-option [value]="2">
+              Hombre
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+    </div>
+  </div>
+
+  <!-- Second row -->
+  <div class="row">
+    <div class="col-quarter">
+      <div class="form-group">
+        <mat-form-field>
+          <mat-label>Estado civil</mat-label>
+            <mat-select>
+              <mat-option [value]="1">
+                Casado
+              </mat-option>
+              <mat-option [value]="2">
+                Soltero
+              </mat-option>
+              <mat-option [value]="3">
+                Unión libre
+              </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+    </div>
+
+    <div class="col-quarter">
+      <div class="form-group">
+        <mat-form-field>
+          <input type="email" matInput placeholder="Email" required>
+        </mat-form-field>
+      </div>
+    </div>
+
+    <div class="col-quarter">
+      <div class="form-group">
+        <mat-form-field>
+          <input type="text" matInput placeholder="Teléfono" required>
+        </mat-form-field>
+      </div>
+    </div>
+
+    <div class="col-quarter">
+      <div class="form-group">
+        <mat-form-field>
+          <input type="text" matInput placeholder="Número de integrantes de tu familia">
+        </mat-form-field>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-quarter">
+      <div class="form-group">
+        <mat-form-field>
+          <mat-label>¿Como te enteraste de nosotros?</mat-label>
+          <mat-select>
+            <mat-option [value]="1">
+              Google
+            </mat-option>
+            <mat-option [value]="2">
+              Facebook
+            </mat-option>
+            <mat-option [value]="3">
+              Instagram
+            </mat-option>
+            <mat-option [value]="4">
+              Recomendación
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+    </div>
+
+    <div class="col-half">
+        <div class="form-group">
+          <mat-form-field>
+              <input type="text" matInput placeholder="¿En qué pais y ciudad vives?" required>
+          </mat-form-field>
+        </div>
+    </div>
+  </div>
+
+  <!-- button -->
+  <div class="row">
+    <div class="col-full text-right">
+        <button mat-raised-button matStepperNext color="primary">Siguiente</button>
+    </div>
+  </div>
+</div>

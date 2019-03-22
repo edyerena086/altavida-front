@@ -1,0 +1,137 @@
+<h3 class="text-center">
+  Historial Nutricional. Tu salud es lo más importante
+</h3>
+
+<div class="container">
+  <div class="row">
+    <div class="col-quarter">
+      <div class="form-group">
+        <mat-form-field>
+          <input type="text" matInput placeholder="¿Cuál es tu peso actual?" required>
+        </mat-form-field>
+      </div>
+    </div>
+
+    <div class="col-quarter">
+      <div class="form-group">
+        <mat-form-field>
+          <input type="text" matInput placeholder="¿Cuál es tu estatura?" required>
+        </mat-form-field>
+      </div>
+    </div>
+
+    <div class="col-quarter">
+      <div class="form-group">
+        <mat-form-field>
+          <input matTooltip="Mide tu abdomen, que la cinta pase justo a la altura de tu ombligo. Toma tres veces la medida y anota todas las mediciones obtenidas." type="text" matInput placeholder="¿Cuál es tu circunferencia abdominal?" required>
+        </mat-form-field>
+      </div>
+    </div>
+
+    <div class="col-quarter">
+      <div class="form-group">
+        <mat-form-field>
+          <input type="text" matTooltip="en cm" matInput placeholder="¿Cuál es tu circunferencia de cadera?" required>
+        </mat-form-field>
+      </div>
+    </div>
+  </div>
+
+  <!-- Second row -->
+  <div class="row">
+    <div class="col-half">
+      <div class="form-group">
+        <mat-form-field>
+          <input type="text" matInput placeholder="¿Realizas algún tipo de ejercicio?, ¿Cuál?, ¿Con qué frecuencia? ¿En que horario?" required>
+        </mat-form-field>
+      </div>
+    </div>
+
+    <div class="col-half">
+      <div class="form-group">
+        <mat-form-field>
+          <input type="text" matInput placeholder="¿Consumes algún alimento, bebida o suplemento antes/durante/final del ejercicio?, ¿Cuál?" required>
+        </mat-form-field>
+      </div>
+    </div>
+  </div>
+
+  <!-- Third row -->
+  <div class="row">
+    <div class="col-third">
+      <div class="form-group">
+        <mat-form-field>
+          <input type="text" matInput placeholder="¿Fumas?, ¿Con que frecuencia?" required>
+        </mat-form-field>
+      </div>
+    </div>
+
+    <div class="col-third">
+      <div class="form-group">
+        <mat-form-field>
+          <mat-label>¿Cuánta agua natural consumes al día?</mat-label>
+          <mat-select>
+            <mat-option [value]="1">
+              Nada
+            </mat-option>
+            <mat-option [value]="2">
+              Un litro o menos
+            </mat-option>
+            <mat-option [value]="2">
+              Dos litros o menos
+            </mat-option>
+            <mat-option [value]="2">
+              Más de dos litros
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+    </div>
+
+    <div class="col-third">
+      <div class="form-group">
+        <mat-form-field>
+          <input type="text" matInput placeholder="¿Consumes café?, ¿Cómo lo preparas?" required>
+        </mat-form-field>
+      </div>
+    </div>
+  </div>
+
+  <!-- Forth row -->
+  <div class="row">
+    <div class="col-third">
+      <div class="form-group">
+        <mat-form-field>
+          <input type="text" matInput placeholder="¿Consumes alcohol?, ¿Con que frecuencia?" required>
+        </mat-form-field>
+      </div>
+    </div>
+
+    <div class="col-third">
+      <div class="form-group">
+        <mat-form-field>
+          <mat-label>¿Sueles cocinar tus alimentos o alguien lo hace por ti?</mat-label>
+          <mat-select>
+            <mat-option [value]="1">
+              Yo cocino mis alimentos
+            </mat-option>
+            <mat-option [value]="2">
+              Mi pareja coicna mis alimentos
+            </mat-option>
+            <mat-option [value]="2">
+              Alguien me ayuda cocinando mis alimentos
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+    </div>
+
+    <div class="col-third">
+      <div class="form-group">
+        <mat-form-field>
+          <input type="text" matInput placeholder="¿Haz padecido alguna enfermad?, ¿Cuál?" required>
+        </mat-form-field>
+      </div>
+    </div>
+  </div>
+</div>
